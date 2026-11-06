@@ -1,0 +1,20 @@
+{
+  "name": "redis-demo-nodejs",
+  "version": "1.0.0",
+  "description": "Demo project với Redis và Node.js (Express + ioredis)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "keywords": ["nodejs", "redis", "demo", "cache"],
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ioredis": "^5.3.2",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

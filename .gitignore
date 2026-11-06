@@ -1,0 +1,58 @@
+# ============================================================
+# .gitignore cho project Demo Redis + Node.js
+# ============================================================
+
+# --- Môi trường & bảo mật (QUAN TRỌT: không commit .env) ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# --- Dependencies Node.js ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# --- Build output (nếu có build sau này) ---
+dist/
+build/
+.next/
+nuxt/
+
+# --- Logs ---
+logs/
+*.log
+npm-debug.log*
+
+# --- Docker ---
+docker-compose.override.yml
+.dockerignore
+
+# --- Redis (nếu chạy local và sinh file dump) ---
+dump.rdb
+appendonlydir/
+
+# --- IDE & Editor ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.tmp
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- Coverage / Test ---
+coverage/
+.nyc_output/
+
+# --- Misc ---
+*.env
+.env.bak
